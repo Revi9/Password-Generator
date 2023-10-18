@@ -29,7 +29,7 @@
     <div class="w-full flex flex-col gap-2 ">
       <div class="flex gap-2 ">
         <div class="w-[83%]">
-          <input id="password" type="text" value="" class="input input-info w-full bg-white " />
+          <label><input id="password" type="text" value="" class="input input-info w-full bg-white " /></label>
           <progress id="progress-bar" class="progress progress-error  w-full" value="0" max="100"></progress>
         </div>
         <button id="copy-btn" class="btn btn-primary text-white">Copy</button>
@@ -66,24 +66,24 @@
 
       <div class="flex flex-col  w-1/2 justify-center items-center gap-5">
 
-        <input id="slider-text" type="number" min="1" max="50" value="12"
-          class="input input-bordered input-primary w-1/3 h-8 max-w-xs bg-slate-200" />
+        <label><input id="slider-text" type="number" min="1" max="50" value="12"
+            class="input input-bordered input-primary w-1/3 h-8 max-w-xs bg-slate-200" /></label>
 
-        <input id="slider" type="range" min="1" max="50" value="12" class="range range-primary border shadow-md w-1/2 h-6
-            " />
+        <label> <input id="slider" type="range" min="1" max="50" value="12" class="range range-primary border shadow-md w-1/2 h-6
+            " /></label>
       </div>
       <div id="check-boxes" class="justify-start items-start flex flex-col md:w-[30%]">
 
         <div class="">
-          <input id="characters" type="checkbox" checked="checked" class="checkbox checkbox-primary" />
+          <label><input id="characters" type="checkbox" checked="checked" class="checkbox checkbox-primary" /></label>
           <span class="label-text text-black md:text-xl text-lg">Characters</span>
         </div>
         <div>
-          <input id="symbols" type="checkbox" checked="checked" class="checkbox checkbox-primary" />
+          <label><input id="symbols" type="checkbox" checked="checked" class="checkbox checkbox-primary" /></label>
           <span class="label-text text-black md:text-xl text-lg">Symbols</span>
         </div>
         <div>
-          <input id="numbers" type="checkbox" checked="checked" class="checkbox checkbox-primary" />
+          <label><input id="numbers" type="checkbox" checked="checked" class="checkbox checkbox-primary" /></label>
           <span class="label-text text-black md:text-xl text-lg">Numbers</span>
         </div>
       </div>
@@ -91,5 +91,6 @@
   </div>
   <script type="module" src="/src/main.ts"></script>
 </body>
+
 
 </html>
